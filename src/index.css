@@ -6,7 +6,32 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+footer{
+  display: grid;
 
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  height:565px;
+  border:solid;
+  background: black;
+}
+footer p{
+  color: white;
+}
+footer .icons{
+  color: black;
+  background: white;
+  padding:30px;
+  margin:10px;
+  border-radius: 25%;
+}
+footer a{
+  background:white;
+  text-decoration: none;
+  border-radius: 7px;
+  color:black;
+  padding:10px;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
