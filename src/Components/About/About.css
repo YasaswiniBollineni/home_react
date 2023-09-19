@@ -1,0 +1,33 @@
+
+
+.cards{
+    
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:190px;
+    padding:30px;
+}
+.html{
+    color:orangered;
+    font-size:larger;
+}
+.python{
+    color:orangered;
+    font-size:larger;
+}
+.card{
+   width:200px;
+   height: 250px;
+   display: grid;
+   box-shadow: 5px 10px skyblue;
+   place-items: center;
+   
+   padding:30px; 
+}
+.img{
+    transform: translate(-5%,-5%);
+    height: 160px;
+    width: 150px;
+    border-radius: 50%;
+
+}

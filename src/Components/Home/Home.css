@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+
+.background-container {
+    background-image: url('https://wallpaperaccess.com/full/682419.jpg'); /* Replace with the actual path to your image */
+    background-size: cover; /* Adjusts the image size to cover the entire container */
+
+    height:100vh; /* Adjust the height as needed */
+width:100vw;
+}
+
+
+
+.centered {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    height: 5px;
+    font-size:xx-large;
+    transform: translate(-20%, -50%);
+    color: white;
+}
+.color{
+    color:pink
+}
+a{
+    text-decoration: none;
+    color: pink;
+}
+.btn {
+    cursor: pointer;
+    border: 1px solid #3498db;
+    background-color: transparent;
+    height: 50px;
+    width: 200px;
+    color: pink;
+    
+    transform: translate(52%,500%);
+    font-size: 1.5em;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+}

@@ -6,10 +6,11 @@ import Login from "../Login/Login";
 import './Navbar.css';
 
 function Navbar(){
+    let isLogin=true
     return(
         <>
         <div class="navbar">
-        <p><i class="fa-sharp fa-solid fa-y"></i>asaswini</p>
+       <img id="okkk" height="55px" width="65px" src="https://png.pngtree.com/png-vector/20200624/ourmid/pngtree-alphabet-letter-y-with-ornaments-and-flowers-hand-lettering-png-image_2265296.jpg" class="fa-solid fa-envelopes-bulk fa-spin"></img>      
         <nav>
         <ul>
           
@@ -18,7 +19,11 @@ function Navbar(){
         <li><Link to="/About"><i class="fa-solid fa-user"></i>About</Link></li>
         <li><Link to="/Contact"><i class="fa-solid fa-comment-sms"></i>Contact</Link></li>
         <li><Link to="/Login"><i class="fa-solid fa-right-to-bracket"></i>Login</Link></li>
-        </ul>
+
+ 
+    </ul>
+    
+    
         </nav>
     </div>
         
