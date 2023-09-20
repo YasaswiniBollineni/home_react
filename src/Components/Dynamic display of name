@@ -1,0 +1,61 @@
+import React from "react";
+import './Contact.css';
+
+class Counter extends React.Component {
+  state = {
+    count: 0,
+    enteredName: ""
+  }
+
+  OnIncrement = () => {
+    const { count } = this.state;
+
+    if (count < 10) {
+      this.setState((prevState) => ({ count: prevState.count + 1 }));
+    } else {
+      alert("Cannot increase more than 10");
+    }
+  }
+
+  OnDecrement = () => {
+    this.setState((prevState) => ({ count: prevState.count - 1 }));
+  }
+
+  OnButton = () => {
+    this.setState({ count: 0 });
+  }
+
+  input = (event) => {
+    this.setState({ enteredName: event.target.value });
+  }
+
+  render() {
+    const { count, enteredName } = this.state;
+
+    return (
+      <>
+      
+          <div>
+            <h1>Count is {count}</h1>
+            
+            <p>Hello {enteredName}</p>
+          
+          </div>
+      
+       
+
+        <input
+          type="text"
+          placeholder="Enter a name"
+          value={enteredName}
+          onChange={this.input}
+        />
+        <button className="button" onClick={this.OnIncrement}>Increase</button>
+        <button className="button" onClick={this.OnDecrement}>Decrease</button>
+        <button className="button" onClick={this.OnButton}>Reset</button>
+      </>
+    )
+  }
+}
+
+export default Counter;
